@@ -160,3 +160,16 @@ class GridPathfinding(StateSpaceProblem):
         plt.close(fig)
         
         return filename
+
+if __name__ == "__main__":
+    from breadth_first_search import BreadthFirstSearch
+
+    problem = GridPathfinding(width=10, height=10, init_position=(0, 0), goal_position=(9, 9))
+    path = BreadthFirstSearch(problem)
+
+    if path:
+        print("Path found:")
+        for s in reversed(path):
+            print(s.state.x, s.state.y)
+    else:
+        print("No path found.")
