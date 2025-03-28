@@ -62,6 +62,9 @@ pip install -r requirements.txt
 | 問題 | ファイル名 |
 |-------------|------------|
 | グリッド経路探索問題 | `grid_pathfinding.py` |
+| 8方向グリッド経路探索問題 | `grid_pathfinding8.py` |
+| スライディングタイルパズル | `sliding_tile.py` |
+| 巡回セールスマン問題 | `tsp.py` |
 
 
 ## コードの実行方法
